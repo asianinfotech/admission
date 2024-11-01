@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Admission Form</h1>
+        <form action="processAdmission.php" method="post" enctype="multipart/form-data">
+            <label>Roll No:</label><input type="text" name="roll_no" required>
+            <label>Name:</label><input type="text" name="name" required>
+            <label>Regd. No:</label><input type="text" name="regd_no" required>
+            <label>Course:</label><input type="text" name="course" required>
+            <label>Course Duration:</label><input type="text" name="course_duration" required>
+            <label>Date of Admission:</label><input type="date" name="date_of_admission" required>
+            <label>Student Mobile No:</label><input type="text" name="student_mobile" required>
+            <label>Email ID:</label><input type="email" name="email" required>
+            <label>Date of Birth:</label><input type="date" name="dob" required>
+            <label>Photo:</label><input type="file" name="photo" accept="image/*" required>
+            <label>Fathers Name:</label><input type="text" name="fathers_name" required>
+            <label>Mothers Name:</label><input type="text" name="mothers_name" required>
+            <label>Fathers Contact Number:</label><input type="text" name="fathers_contact" required>
+            <label>Mothers Contact Number:</label><input type="text" name="mothers_contact" required>
+            <label>Full Address:</label><textarea name="address" required></textarea>
+            <label>Vill/Town:</label><input type="text" name="vill_town" required>
+            <label>Pin Code:</label><input type="text" name="pin_code" required>
+            <label>District:</label><input type="text" name="district" required>
+            <label>Last Exam Passed:</label><input type="text" name="last_exam_passed" required>
+            <label>Board/University:</label><input type="text" name="board_university" required>
+            <label>Percentage:</label><input type="text" name="percentage" required>
+            <label>Passing Year:</label><input type="text" name="passing_year" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
